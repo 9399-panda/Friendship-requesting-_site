@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Friend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page">
+        <div class="login-overlay">
+            <h1>Friendship Requesting Site</h1>
+            <h2>Please Login</h2>
+            <form id="login-form">
+                <label for="username">Login Name:</label>
+                <input type="text" id="username" placeholder="Enter login name"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password"><br>
+                <button type="submit">Login</button>
+                <p id="error-message" style="color: red;"></p>
+            </form>
+        </div>
+    </div>
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>A Message for You</h1>
+        </header>
+        <main>
+            <div class="quote-on-water">
+                <p>"Whatever happened is past. I am sorry for all the mistakes I have done.  
+                We’re not enemies by birth; there are situations for this ignoring or not talking.  
+                So please talk to me, Friend."</p>
+            </div>
+            <nav class="menu">
+                <h3>Menu</h3>
+                <div class="menu-item">
+                    <h4>Songs</h4>
+                    <audio controls>
+                        <source src="https://example.com/brundhavanam-song.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>"Brundhavanam - Nejamana Nejamana Nelibadi Kala Kantunana"</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Movies</h4>
+                    <p>"Oka Laila Kosam"</p>
+                    <a href="https://www.imdb.com/title/tt3954770/" target="_blank">Check it out</a>
+                </div>
+            </nav>
+            <section class="poll">
+                <h3>Your Response</h3>
+                <form id="poll-form">
+                    <input type="radio" id="option1" name="poll" value="talk-now">
+                    <label for="option1">I will talk to you from this day:</label>
+                    <input type="text" id="date-input" placeholder="Enter date or day"><br>
+                    <input type="radio" id="option2" name="poll" value="need-time">
+                    <label for="option2">I will talk to you, but I need time</label><br>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="poll-result"></p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
